@@ -6,6 +6,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 	
 	
 
-    provider :facebook, '895562953865919', 'a7f72b0ede9646a3046dd7d2e9f7c158', scope: 'publish_actions',
+    provider :facebook, '770027773143418', '22464fb63efa613db51a00f6fac2bc71', scope: 'publish_actions',
                 :image_size => {width: 500, height: 500}
 end
