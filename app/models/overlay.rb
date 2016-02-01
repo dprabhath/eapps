@@ -24,7 +24,7 @@ class Overlay
 
   def self.s3_upload source, file
     s3 = Aws::S3::Resource.new(
-            region:'US Standard',
+            region:'us-west',
             credentials: Aws::Credentials.new(ENV['AWS_ACCESS_KEY_ID'],
                                           ENV['AWS_SECRET_ACCESS_KEY']))
     bucket = s3.bucket(ENV['S3_BUCKET_NAME'])
