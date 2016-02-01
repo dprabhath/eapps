@@ -41,7 +41,7 @@ class OverlayController < ApplicationController
   private
     def fetch_image
       image = params.fetch(:image) if params[:image]
-      url = 'https://eappsxyz.s3.amazonaws.com'
+      url = 'https://s3.amazonaws.com/eappsxyz'
       @file_path = "#{url}/#{current_user.uid}_#{image}.png"
     end
 
