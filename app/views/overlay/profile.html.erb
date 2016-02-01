@@ -4,7 +4,7 @@
 <div class="row">
   <% @overlay_images.each do |image|  %>
     <div class="col-md-3 col-sm-6 col-xs-12 pdbtm-sm">
-      <p><%= image_tag "https://s3.amazonaws.com/eappsxyz/#{current_user.uid}_#{image}",
+      <p><%= image_tag "https://eappsxyz.s3.amazonaws.com/#{current_user.uid}_#{image}",
               class: 'img-responsive', data: {action: 'zoom'} %></p>
       <div class="row">
         <div class="col-md-6 col-sm-6">
