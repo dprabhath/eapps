@@ -1,6 +1,6 @@
 class Overlay
   def self.images
-    %w(dashain.png dashain2.png npflag.png dharahara.png merodesh.png ilovenepal.png)
+    %w(dashain.png dashain2.png npflag.png dharahara.png merodesh.png ilovenepal.png dpmnet.png)
   end
 
   def self.create_image source, overlay_image, user
@@ -9,7 +9,7 @@ class Overlay
 
     overlay = Magick::Image.read("app/assets/images/overlays/#{overlay_image}").first
     temp = source.composite(overlay, Magick::CenterGravity, Magick::SrcOverCompositeOp)
-    temp.opacity = (Magick::TransparentOpacity-Magick::OpaqueOpacity) * 0.01
+    temp.opacity = (Magick::TransparentOpacity-Magick::OpaqueOpacity) * 0.45
     source.composite!(temp, Magick::CenterGravity, Magick::SrcOverCompositeOp)
     s3_upload source, file
   end
