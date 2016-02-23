@@ -1,6 +1,6 @@
 class Overlay
   def self.images
-    %w(dashain.png dashain2.png npflag.png dharahara.png merodesh.png ilovenepal.png imaginecupnew.png)
+    %w(dashain.png dashain2.png npflag.png dharahara.png merodesh.png ilovenepal.png imaginecupnew.png 001.png 002.png 003.png 004.png)
   end
 
   def self.create_image source, overlay_image, user
